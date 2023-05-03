@@ -1,3 +1,16 @@
+<?php
+// stampare
+echo "ciao";
+
+// variabile
+$username = "Mirko";
+echo "ciao $username";
+
+// concatenazione
+echo "ciao " . $username;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +20,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World from PHP</h1>
+    <!-- La variabile vive in tutte il file -->
+    <h2>Ciao <?php echo $username; ?></h2>
+
+    <!-- Si può fare anche il processo contrario -->
+    <?php 
+    echo "<p>Ciao iuser</p>";
+    ?>
 </body>
 </html>
