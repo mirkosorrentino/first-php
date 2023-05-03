@@ -21,11 +21,11 @@
         $lorem_exploded = explode(",", $lorem);
     ?>
     <h2>Stampo</h2>
-    <p>
+    <pre>
         <?php
         var_dump($lorem_exploded);
         ?>
-    </p>
+    </pre>
 
     <?php 
         $lorem_replace = str_replace ("Lorem", "gioia", $lorem);
@@ -36,5 +36,10 @@
         echo($lorem_replace);
         ?>
     </p>
+
+    <?php
+        $names = ["Olga", "Federico", "Gloria"];
+        var_dump($names);
+    ?>
 </body>
 </html>
